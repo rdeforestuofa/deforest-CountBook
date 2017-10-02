@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/counter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:text="Hello World"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/decrement_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:text="-"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/edit_btn"
+        android:layout_marginEnd="11dp" />
+
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:text="2"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:layout_alignBottom="@+id/decrement_btn"
+        android:layout_toEndOf="@+id/edit_btn" />
+
+
+    <Button
+        android:id="@+id/increment_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:text="+"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/reset_btn"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:text="Reset"
+
+
+        android:layout_alignBaseline="@+id/edit_btn"
+        android:layout_alignBottom="@+id/edit_btn"
+        android:layout_toStartOf="@+id/edit_btn" />
+
+    <Button
+        android:id="@+id/edit_btn"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:text="Edit"
+
+        android:layout_below="@+id/decrement_btn"
+        android:layout_toStartOf="@+id/delete_btn" />
+
+    <Button
+        android:id="@+id/delete_btn"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:text="Delete"
+
+
+        android:layout_below="@+id/count"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/counter_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date()"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/reset_btn"
+        android:layout_marginStart="10dp" />
+
+
+</RelativeLayout>
